@@ -688,6 +688,67 @@ color: var(--accent-color);
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.widget:last-child {
+  flex-basis: calc(50% - 15px);
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+.subscribe-text {
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--waite-bg-color);
+  margin-bottom: 20px;
+}
+
+.subscribe-label {
+  display: inline-flex;
+}
+label {
+  cursor: default;
+}
+
+.subscribe-input {
+  width: 358px;
+  font-size: 16px;
+  line-height: 1.25;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--dark-bg-text-color);
+  color: var(--waite-bg-color);
+}
+
+.subscribe-button {
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--waite-bg-color);
+  padding-top: 10px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.subscribe-icon {
+  margin-left: 10px;
+}
+
 /* Модальне вікно у герої*/
 .backdrop {
   position: fixed;
@@ -737,11 +798,13 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   width: 18px;
   height: 18px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .close-button:hover,
   .close-button:focus {
   fill: var(--accent-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
 /* Форма */
@@ -883,7 +946,6 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea:hover {
- 
 color: var(--accent-color); 
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }  
@@ -906,4 +968,5 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: contain;
 background-origin: border-box;
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
