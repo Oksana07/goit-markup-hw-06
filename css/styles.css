@@ -749,6 +749,14 @@ label {
   border: none;
   cursor: pointer;
 }
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  /* color: var(--accent-color); */
+  fill: var(--accent-color); */
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .subscribe-icon {
   margin-left: 10px;
 }
@@ -802,13 +810,14 @@ label {
   cursor: pointer;
   width: 18px;
   height: 18px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .close-button:hover,
   .close-button:focus {
-  fill: var(--accent-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--accent-color);
+  color: var(--waite-bg-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
 /* Форма */
